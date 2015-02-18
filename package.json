@@ -11,7 +11,8 @@
   ],
   "main": "angular-lz-string.js",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start --single-run --browsers Firefox,Chrome,Safari,PhantomJS,ChromeCanary,Opera tests/karma.conf.js"
+    "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS tests/karma.conf.js",
+    "test-mac-all": "./node_modules/karma/bin/karma start --single-run --browsers Firefox,Chrome,Safari,PhantomJS,ChromeCanary,Opera tests/karma.conf.js"
   },
   "devDependencies": {
     "angular": "^1.3.13",
