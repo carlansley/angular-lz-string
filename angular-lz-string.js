@@ -74,12 +74,12 @@
       if (input == null) return "";
       var output = "",
         ol = 0,
-        output_,
+        output_ = null,
         chr1, chr2, chr3,
         enc1, enc2, enc3, enc4,
         i = 0, f = LZString._f;
 
-      input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+      input = input.replace(/[^A-Za-z0-9\+\/=]/g, "");
 
       while (i < input.length) {
 
@@ -269,8 +269,11 @@
           buf[i] = compressed[i * 2] * 256 + compressed[i * 2 + 1];
         }
 
-        return LZString.decompress(String.fromCharCode.apply(null, buf));
-
+        var result = "";
+        buf.forEach(function (c) {
+          result += String.fromCharCode(c);
+        });
+        return LZString.decompress(result);
       }
 
     },
@@ -474,7 +477,6 @@
         }
         context_enlargeIn--;
         if (context_enlargeIn == 0) {
-          context_enlargeIn = Math.pow(2, context_numBits);
           context_numBits++;
         }
       }
@@ -514,7 +516,7 @@
         dictSize = 4,
         numBits = 3,
         entry = "",
-        result = "",
+        result,
         i,
         w,
         bits, resb, maxpower, power,
