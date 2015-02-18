@@ -1,6 +1,11 @@
 {
   "name": "angular-lz-string",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "angular-lz-string.js",
-  "keywords": ["compression", "lzw", "string", "angular"]
+  "keywords": ["compression", "lzw", "string", "angular"],
+  "ignore": [
+    "tests/",
+    "bower_components",
+    "node_modules"
+  ]
 }
