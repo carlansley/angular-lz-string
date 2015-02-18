@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/carlansley/angular-lz-string.svg)](https://travis-ci.org/carlansley/angular-lz-string)
+
 angular-lz-string
 =========
 Angular wrapper for lz-string module, original here: http://pieroxy.net/blog/pages/lz-string/index.html
