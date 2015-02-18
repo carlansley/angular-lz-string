@@ -674,7 +674,18 @@
 
   angular.module('lz-string', [])
     .factory('LZString', function () {
-      return LZString;
+      return {
+        compressToBase64: LZString.compressToBase64,
+        decompressFromBase64: LZString.decompressFromBase64,
+        compressToUTF16: LZString.compressToUTF16,
+        decompressFromUTF16: LZString.decompressFromUTF16,
+        compressToUint8Array: LZString.compressToUint8Array,
+        decompressFromUint8Array: LZString.decompressFromUint8Array,
+        compressToEncodedURIComponent: LZString.compressToEncodedURIComponent,
+        decompressFromEncodedURIComponent: LZString.decompressFromEncodedURIComponent,
+        compress: LZString.compress,
+        decompress: LZString.decompress
+      };
     });
 
 }(angular));
