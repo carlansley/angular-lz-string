@@ -1,6 +1,6 @@
 {
   "name": "angular-lz-string",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "angular-lz-string.js",
   "keywords": ["compression", "lzw", "string", "angular"],
   "ignore": [
