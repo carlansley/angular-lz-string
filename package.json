@@ -1,6 +1,6 @@
 {
   "name": "angular-lz-string",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "WTFPL",
   "description": "Angular wrapper for lz-string, an LZ-based compression algorithm",
   "homepage": "http://pieroxy.net/blog/pages/lz-string/index.html",
