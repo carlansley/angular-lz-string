@@ -430,4 +430,8 @@
       };
     });
 
+  if (typeof module !== 'undefined') {
+    module.exports = 'lz-string';
+  }
+
 }(angular));
